@@ -4,3 +4,109 @@
     display: inline-block;
     margin: 5px;
 }
+
+
+
+// Base Switch styles
+// --------------------------------------------------
+
+.switch {
+    font-weight: @btn-font-weight;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    .switch-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+
+    background-position: 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.5em;
+    height: 1em;
+    border: 1px solid @gray;
+    border-radius: 999px;
+    margin: 0 .7em;
+    background-image: linear-gradient(rgba(0, 0, 0, .1), transparent), linear-gradient(90deg, transparent 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    background-origin: border-box;
+    background-clip: border-box;
+    overflow: hidden;
+    font-size: 180%;
+    padding:0;   
+    .transition-duration(.4s);
+    .transition-property(all);
+
+    &:hover,
+    &:focus,
+    &.focus {
+        color: @btn-default-color;
+        text-decoration: none;
+    }
+
+
+    &:before,
+    &:after {
+        font: normal 60%/1.7 sans-serif;
+        text-transform: uppercase;
+    }
+
+    &:before{
+        content: attr(data-on);
+        float: left;
+        width: 1.65em;
+        height: 1.65em;
+        margin: -.1em;
+        border: 1px solid rgba(0, 0, 0, .1);
+        border-radius: inherit;
+        background: white;
+        color: white;
+        text-indent: -4em;        
+    }
+
+    &:after {
+        content: attr(data-off);
+        float: left;
+        text-indent: .2em;
+        color: #333;
+        text-shadow: none;
+    }
+
+}
+
+
+input[type=checkbox]:checked + .switch, input[type=radio]:checked + .switch {
+    padding-left: 1.5em;
+    background-position: 0 0;
+}
+
+
+
+// Alternate Switches
+// --------------------------------------------------
+
+.switch-default {
+  .switch-variant(@switch-default-color; @switch-default-bg; @switch-default-border);
+  color: @gray-darker;
+}
+.switch-primary {
+  .switch-variant(@switch-primary-color; @switch-primary-bg; @switch-primary-border);
+}
+// Success appears as green
+.switch-success {
+  .switch-variant(@switch-success-color; @switch-success-bg; @switch-success-border);
+}
+// Info appears as blue-green
+.switch-info {
+  .switch-variant(@switch-info-color; @switch-info-bg; @switch-info-border);
+}
+// Warning appears as orange
+.switch-warning {
+  .switch-variant(@switch-warning-color; @switch-warning-bg; @switch-warning-border);
+}
+// Danger and error appear as red
+.switch-danger {
+  .switch-variant(@switch-danger-color; @switch-danger-bg; @switch-danger-border);
+}
+
