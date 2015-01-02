@@ -55,6 +55,10 @@ module.exports = function(grunt) {
         less: {
             files: 'less/**/*.less',
             tasks: ['default']
+        },
+        demo: { files: 'demo/*.html' },
+        options: {
+            livereload: true
         }
     },
 
@@ -63,7 +67,7 @@ module.exports = function(grunt) {
         options: {
             hostname: '*',
             port: 8083,
-            base: 'demo',
+            base: '.',
             keepalive: true,
             open: true
         }
