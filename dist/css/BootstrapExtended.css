@@ -13,4 +13,150 @@
   display: inline-block;
   margin: 5px;
 }
-/*# sourceMappingURL=BootstrapExtended.css.map */
+.switch {
+  font-weight: normal;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  background-position: 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 2.5em;
+  height: 1em;
+  border: 1px solid #555555;
+  border-radius: 999px;
+  margin: 0 .7em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), transparent), linear-gradient(90deg, transparent 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  background-origin: border-box;
+  background-clip: border-box;
+  overflow: hidden;
+  font-size: 180%;
+  padding: 0;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.switch:hover,
+.switch:focus,
+.switch.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.switch:before,
+.switch:after {
+  font: normal 60%/1.7 sans-serif;
+  text-transform: uppercase;
+}
+.switch:before {
+  content: attr(data-on);
+  float: left;
+  width: 1.65em;
+  height: 1.65em;
+  margin: -0.1em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: inherit;
+  background: white;
+  color: white;
+  text-indent: -4em;
+}
+.switch:after {
+  content: attr(data-off);
+  float: left;
+  text-indent: .2em;
+  color: #333;
+  text-shadow: none;
+}
+input[type=checkbox]:checked + .switch,
+input[type=radio]:checked + .switch {
+  padding-left: 1.5em;
+  background-position: 0 0;
+}
+.switch-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  color: #222222;
+}
+.switch-default:hover,
+.switch-default:focus,
+.switch-default.focus {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.switch-primary {
+  color: #ffffff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.switch-primary:hover,
+.switch-primary:focus,
+.switch-primary.focus {
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.switch-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.switch-success:hover,
+.switch-success:focus,
+.switch-success.focus {
+  color: #ffffff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.switch-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.switch-info:hover,
+.switch-info:focus,
+.switch-info.focus {
+  color: #ffffff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.switch-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.switch-warning:hover,
+.switch-warning:focus,
+.switch-warning.focus {
+  color: #ffffff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.switch-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.switch-danger:hover,
+.switch-danger:focus,
+.switch-danger.focus {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+/*# sourceMappingURL=bootstrapExtended.css.map */
