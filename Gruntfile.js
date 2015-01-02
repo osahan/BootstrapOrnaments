@@ -50,13 +50,24 @@ module.exports = function(grunt) {
       }
     },
 
-
     watch: {
         grunt: { files: ['Gruntfile.js'] },
         less: {
             files: 'less/**/*.less',
             tasks: ['default']
         }
+    },
+
+    connect: {
+      server1: {
+        options: {
+            hostname: '*',
+            port: 8083,
+            base: 'demo',
+            keepalive: true,
+            open: true
+        }
+      }
     }
 
   });
@@ -68,9 +79,10 @@ grunt.loadNpmTasks('grunt-contrib-less');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-// grunt.loadNpmTasks('grunt-contrib-jshint');
-// grunt.loadNpmTasks('grunt-contrib-uglify');
-
 grunt.registerTask('default', ['clean', 'less', 'csslint', 'cssmin']);
+
+grunt.loadNpmTasks('grunt-contrib-connect');
+grunt.registerTask('dev',['connect:server1']);
+
 
 };
