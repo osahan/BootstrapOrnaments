@@ -13,19 +13,12 @@
 .switch {
     font-weight: @btn-font-weight;
     text-align: center;
-    touch-action: manipulation;
     cursor: pointer;
-    border: 1px solid transparent;
     white-space: nowrap;
-    .switch-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
-
-    background-position: 0 0;
     display: inline-block;
     vertical-align: middle;
     width: 2.5em;
     height: 1em;
-    border: 1px solid @gray;
-    border-radius: 999px;
     margin: 0 .7em;
     background-image: linear-gradient(rgba(0, 0, 0, .1), transparent), linear-gradient(90deg, transparent 50%, white 50%);
     background-size: 200% 100%;
@@ -34,7 +27,9 @@
     background-clip: border-box;
     overflow: hidden;
     font-size: 180%;
-    padding:0;   
+    padding:0;
+    border: 1px solid @gray-mid-lighter;
+    .switch-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
     .transition-duration(.4s);
     .transition-property(all);
 
@@ -57,11 +52,10 @@
         float: left;
         width: 1.65em;
         height: 1.65em;
-        margin: -.1em;
-        border: 1px solid rgba(0, 0, 0, .1);
+        margin-top: -.1em;
+        border: 1px solid @gray-lighter;
         border-radius: inherit;
         background: white;
-        color: white;
         text-indent: -4em;        
     }
 
@@ -76,22 +70,14 @@
 }
 
 
-input[type=checkbox]:checked + .switch, input[type=radio]:checked + .switch {
-    padding-left: 1.5em;
-    background-position: 0 0;
-}
-
-
-
 // Alternate Switches
 // --------------------------------------------------
 
 .switch-default {
-  .switch-variant(@switch-default-color; @switch-default-bg; @switch-default-border);
-  color: @gray-darker;
+  .switch-variant(@gray-darker; @switch-default-bg; @switch-default-border);
 }
 .switch-primary {
-  .switch-variant(@switch-primary-color; @switch-primary-bg; @switch-primary-border);
+    .switch-variant(@switch-primary-color; @switch-primary-bg; @switch-primary-border);
 }
 // Success appears as green
 .switch-success {
@@ -108,5 +94,14 @@ input[type=checkbox]:checked + .switch, input[type=radio]:checked + .switch {
 // Danger and error appear as red
 .switch-danger {
   .switch-variant(@switch-danger-color; @switch-danger-bg; @switch-danger-border);
+}
+
+.switch-round {
+    border-radius: 999px;
+}
+
+input[type=checkbox]:checked + .switch, input[type=radio]:checked + .switch {
+    padding-left: 1.5em;
+    background-position: 0 0;
 }
 
