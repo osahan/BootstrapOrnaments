@@ -5,14 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Bootstrap Extended by osahan</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/osahan/BootstrapExtended/master/dist/css/BootstrapExtended.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/BootstrapExtn-Pages.min.css">
   </head>
-  <body>
+  <body class="bsextn">
+
+<header class="navbar navbar-static-top bsextn-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="../" class="navbar-brand">Bootstrap Extended</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+      
+    </nav>
+  </div>
+</header>
+
+<a href="https://github.com/osahan/BootstrapExtended"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+<div class="bsextn-header">
+      <div class="container">
+        <h1>Bootstrap Extended</h1>
+        <p class="lead">Collection of CSS only switches for checkboxes and radios and other fun components</p>
+
+        <p class="view"><a href="https://github.com/osahan/BootstrapExtended">View the Project on GitHub <small>osahan/BootstrapExtended</small></a></p>
+
+<div class="btn-group" role="group" aria-label="...">
+  <a href="https://github.com/osahan/BootstrapExtended/zipball/master" class="btn btn-default" >Download <strong>ZIP File</strong></a>
+  <a href="https://github.com/osahan/BootstrapExtended/tarball/master" class="btn btn-default">Download <strong>TAR Ball</strong></a>
+  <a href="https://github.com/osahan/BootstrapExtended" class="btn btn-default">View On <strong>GitHub</strong></a>
+</div>
+
+      </div>
+</div>
+
+<div class="container">
+
+  <h2>Getting Started</h2>
+
+  <h2>Checkboxes</h2>
+  <p class="lead">Toggleable CSS only switches, simply add some data attributes.</p>
+  <h3>Example</h3>
+  <p>Use the <code>.switch</code> class on <code class="language-markup">&lt;label></code> element assigned to Checkbox</p>
+
+  <div class="example">
+
+    <div data-checkbox="toggle">
+      <input type="checkbox" name="test" id="chkbox" class="a11y">
+      <label for="chkbox" class="switch" data-on="ON" data-off="OFF"></label>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+  </div>
+
+  <h2>Radios</h2>
+
+
+</div>
+
+
+
+
+<div class="container bottom">
+<p>
+Licensed under 
+<a href="https://github.com/osahan/BootstrapExtended/blob/master/LICENSE" target="_blank">The MIT License (MIT)</a>
+· This project is maintained by <a href="https://github.com/osahan" target="_blank">Osahan</a>
+· Hosted on GitHub Pages
+</p>
+</div>
+
+<!--
+
     <div class="wrapper">
       <header>
         <h1>Bootstrap Extended</h1>
@@ -28,10 +99,40 @@
         </ul>
       </header>
       <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h2>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Bootstrap Extended.</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>
+  Bootstrap Extended is an Open source project on Github. It includes some very simple components and bootstrap plugins.
+</p>
+
+<h3>Checkboxes</h3>
+
+
+<pre><code>&lt;div>
+  &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
+  &lt;label for="chkbox" class="switch switch-default" data-on="ON" data-off="OFF">&lt;/label>
+&lt;/div></code>
+</pre>
+
+
+<div class="bs-example" data-example-id="glyphicons-general">
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-default" aria-label="Center Align"><span class="glyphicon glyphicon-align-center" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-default" aria-label="Right Align"><span class="glyphicon glyphicon-align-right" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-default" aria-label="Justify"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></button>
+      </div>
+    </div>
+    <div class="btn-toolbar" role="toolbar">
+      <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
+      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
+      <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
+      <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
+    </div>
+  </div>
+
 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
@@ -65,7 +166,15 @@ $ git checkout gh-pages
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+
+  -->
+
+
+
+
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
   </body>
 </html>
