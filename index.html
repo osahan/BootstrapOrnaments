@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Bootstrap Extended by osahan</title>
+    <title>Bootstrap Ornaments by osahan</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -13,12 +13,12 @@
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/osahan/BootstrapExtended/master/dist/css/BootstrapExtended.min.css">
     <link rel="stylesheet" type="text/css" href="dist/css/BootstrapExtn-Pages.min.css">
   </head>
-  <body class="bsextn">
+  <body class="bsextn"  onload="prettyPrint()">
 
 <header class="navbar navbar-static-top bsextn-nav" id="top" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a href="https://github.com/osahan" class="navbar-brand">Bootstrap Extended</a>
+      <a href="https://github.com/osahan" class="navbar-brand">Bootstrap Ornaments</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse">
       
@@ -26,19 +26,19 @@
   </div>
 </header>
 
-<a href="https://github.com/osahan/BootstrapExtended"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+<a href="https://github.com/osahan/BootstrapOrnaments"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
 <div class="bsextn-header">
       <div class="container">
-        <h1>Bootstrap Extended</h1>
+        <h1>Bootstrap Ornaments</h1>
         <p class="lead">Collection of CSS only switches for checkboxes and radios and other fun components</p>
 
-        <p class="view"><a href="https://github.com/osahan/BootstrapExtended">View the Project on GitHub <small>osahan/BootstrapExtended</small></a></p>
+        <p class="view"><a href="https://github.com/osahan/BootstrapOrnaments">View the Project on GitHub <small>osahan/BootstrapExtended</small></a></p>
 
 <div class="btn-group" role="group" aria-label="...">
-  <a href="https://github.com/osahan/BootstrapExtended/zipball/master" class="btn btn-default" >Download <strong>ZIP File</strong></a>
-  <a href="https://github.com/osahan/BootstrapExtended/tarball/master" class="btn btn-default">Download <strong>TAR Ball</strong></a>
-  <a href="https://github.com/osahan/BootstrapExtended" class="btn btn-default">View On <strong>GitHub</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments/zipball/master" class="btn btn-default" >Download <strong>ZIP File</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments/tarball/master" class="btn btn-default">Download <strong>TAR Ball</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments" class="btn btn-default">View On <strong>GitHub</strong></a>
 </div>
 
       </div>
@@ -51,7 +51,7 @@
   <h2>Checkboxes</h2>
   <p class="lead">Toggleable CSS only switches, simply add some data attributes.</p>
   <h3>Example</h3>
-  <p>Use the <code>.switch</code> class on <code class="language-markup">&lt;label></code> element assigned to Checkbox</p>
+  <p>Use the <code>.switch</code> class on <code>&lt;label></code> element assigned to Checkbox</p>
 
   <div class="example">
 
@@ -62,6 +62,14 @@
 
   </div>
   <div class="highlight">
+
+  <pre class="prettyprint">
+
+  &lt;div data-checkbox="toggle">
+      &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
+      &lt;label for="chkbox" class="switch" data-on="ON" data-off="OFF"></label>
+  &lt;/div>
+  </pre>
 
   </div>
 
@@ -76,7 +84,7 @@
 <div class="container bottom">
 <p>
 Licensed under 
-<a href="https://github.com/osahan/BootstrapExtended/blob/master/LICENSE" target="_blank">The MIT License (MIT)</a>
+<a href="https://github.com/osahan/Ornaments/blob/master/LICENSE" target="_blank">The MIT License (MIT)</a>
 · This project is maintained by <a href="https://github.com/osahan" target="_blank">Osahan</a>
 · Hosted on GitHub Pages
 </p>
@@ -172,7 +180,7 @@ $ git checkout gh-pages
 
 
 
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="js/prettify.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
