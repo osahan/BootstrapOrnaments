@@ -10,7 +10,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgit.com/osahan/BootstrapExtended/master/dist/css/BootstrapExtended.min.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/osahan/BootstrapOrnaments/master/dist/css/bootstrapOrnaments.min.css">
     <link rel="stylesheet" type="text/css" href="dist/css/BootstrapExtn-Pages.min.css">
   </head>
   <body class="bsextn"  onload="prettyPrint()">
@@ -47,17 +47,63 @@
 <div class="container">
 
   <h2>Getting Started</h2>
+  <p>
+    Include the latest version of <a href="http://jquery.com/download/" target="_blank">jQuery</a>, <a href="http://www.bootstrapcdn.com/" target="_blank">Bootstrap</a> and Bootstrap Ornaments:
+  </p>
+
+  <pre class="prettyprint">
+
+    &lt;!-- Latest compiled and minified CSS -->
+        &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    &lt;!-- Latest compiled and minified Bootstrap Ornaments CSS -->
+        &lt;link rel="stylesheet" href="dist/css/bootstrapOrnaments.min.css">
+
+
+    &lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">  &lt;/script>
+    &lt;!-- Latest compiled and minified Bootstrap JavaScript -->
+        &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js">&lt;/script>
+  </pre>
 
   <h2>Checkboxes</h2>
-  <p class="lead">Toggleable CSS only switches, simply add some data attributes.</p>
+  <p class="lead">Toggleable CSS only switches, simply add classes and data attributes.</p>
   <h3>Example</h3>
-  <p>Use the <code>.switch</code> class on <code>&lt;label></code> element assigned to Checkbox</p>
-
+  <p>Default Style: Use the <code>.switch</code> class on <code>&lt;label></code> element assigned to Checkbox.</p>
+  <p>
+    Use any of the available switch classes to quickly create a styled switch. <br />
+    Primary <code>.switch-primary</code>, Success <code>.switch-success</code>, Info <code>.switch-info</code>, Warning <code>.switch-warning</code>, Danger <code>.switch-danger</code>,   
+    </p>
   <div class="example">
+    <div class="row">
+        <div class="col-md-12">
+            <p>To add "ON / OFF" label, add <code>data-on="ON"</code> and <code>data-off="OFF"</code> to <code>&lt;label></code> element.</p>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox" class="a11y">
+                <label for="chkbox" class="switch" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox1" class="a11y" checked />
+                <label for="chkbox1" class="switch switch-primary" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox2" class="a11y" checked/>
+                <label for="chkbox2" class="switch switch-success" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox3" class="a11y" checked/>
+                <label for="chkbox3" class="switch switch-info" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox4" class="a11y" checked/>
+                <label for="chkbox4" class="switch switch-warning" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox5" class="a11y" checked/>
+                <label for="chkbox5" class="switch switch-danger" data-on="ON" data-off="OFF"></label>
+            </div>
 
-    <div data-checkbox="toggle">
-      <input type="checkbox" name="test" id="chkbox" class="a11y">
-      <label for="chkbox" class="switch" data-on="ON" data-off="OFF"></label>
+        </div>
     </div>
 
   </div>
@@ -65,13 +111,104 @@
 
   <pre class="prettyprint">
 
-  &lt;div data-checkbox="toggle">
+  &lt;div>
       &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
-      &lt;label for="chkbox" class="switch" data-on="ON" data-off="OFF"></label>
+      &lt;label for="chkbox" class="switch switch-primary" data-on="ON" data-off="OFF"></label>
   &lt;/div>
   </pre>
 
   </div>
+
+
+
+  <p>Rounded Corners: Use the <code>.switch .switch-round</code> class on <code>&lt;label></code> element assigned to Checkbox</p>
+  <div class="example">
+    <div class="row">
+        <div class="col-md-12">
+            <p>To add "ON / OFF" label, add <code>data-on="ON"</code> and <code>data-off="OFF"</code> to <code>&lt;label></code> element. </p>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox-round" class="a11y">
+                <label for="chkbox-round" class="switch switch-round" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox1-round" class="a11y" checked />
+                <label for="chkbox1-round" class="switch switch-round switch-primary" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox2-round" class="a11y" />
+                <label for="chkbox2-round" class="switch switch-round switch-success" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox3-round" class="a11y" />
+                <label for="chkbox3-round" class="switch switch-round switch-info" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox4-round" class="a11y" />
+                <label for="chkbox4-round" class="switch switch-round switch-warning" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox5-round" class="a11y" />
+                <label for="chkbox5-round" class="switch switch-round switch-danger" data-on="ON" data-off="OFF"></label>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+  <pre class="prettyprint">
+
+  &lt;div>
+      &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
+      &lt;label for="chkbox" class="switch  switch-round switch-primary" data-on="ON" data-off="OFF"></label>
+  &lt;/div>
+  </pre>
+
+  </div>
+
+
+
+  <p>Switch with no label: Remove <code>data-on="ON"</code> and <code>data-off="OFF"</code> from <code>&lt;label></code> element</p>
+  <div class="example">
+    <div class="row">
+        <div class="col-md-12">
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox-notext" class="a11y" checked>
+                <label for="chkbox-notext" class="switch switch-success"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox1-round-notext" class="a11y" checked />
+                <label for="chkbox1-round-notext" class="switch switch-round switch-success"></label>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+  <pre class="prettyprint">
+
+  &lt;div>
+      &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
+      &lt;label for="chkbox" class="switch switch-success"></label>
+  &lt;/div>
+
+  &lt;div>
+      &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
+      &lt;label for="chkbox" class="switch switch-round switch-success"></label>
+  &lt;/div>
+  </pre>
+
+  </div>
+
+
+
+
+
+
+
+
 
   <h2>Radios</h2>
 
