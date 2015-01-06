@@ -24,7 +24,7 @@ module.exports = function(grunt) {
           sourceMapURL: '<%= pkg.name %>.css.map',
           sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
         },
-        src: 'less/bootstrapExtended.less',
+        src: 'less/bootstrapOrnaments.less',
         dest: 'dist/css/<%= pkg.name %>.css'
       }
     },

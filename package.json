@@ -2,22 +2,22 @@
   "name": "bootstrapOrnaments",
   "version": "0.0.1",
   "description": "Extended Bootstrap provides mobile style switches and much more",
-  "homepage": "https://github.com/osahan/BootstrapExtended",
+  "homepage": "https://github.com/osahan/BootstrapOrnaments",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/osahan/BootstrapExtended.git"
+    "url": "https://github.com/osahan/BootstrapOrnaments.git"
   },
   "author": "Osahan (Gagandeep Singh)",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/osahan/BootstrapExtended/blob/master/LICENSE"
+    "url": "https://github.com/osahan/BootstrapOrnaments/blob/master/LICENSE"
   },
   "bugs": {
-    "url": "https://github.com/osahan/BootstrapExtended/issues"
+    "url": "https://github.com/osahan/BootstrapOrnaments/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
