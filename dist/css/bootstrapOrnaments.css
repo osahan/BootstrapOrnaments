@@ -371,13 +371,12 @@ input[type=radio]:checked + .switch {
 * Cross
 */
 .cross {
-  top: 0.9em;
-  left: 0.4em;
+  padding-top: 0.4em;
 }
 .cross span {
   cursor: pointer;
   border-radius: 999px;
-  height: 0.2em;
+  height: 0.3em;
   width: 1.5em;
   display: block;
   content: '';
@@ -396,7 +395,7 @@ input[type=radio]:checked + .switch {
 .cross span:after {
   cursor: pointer;
   border-radius: 999px;
-  height: 0.2em;
+  height: 0.3em;
   width: 1.5em;
   display: block;
   content: '';
@@ -457,13 +456,12 @@ input[type=radio]:checked + .switch {
 * Plusminus
 */
 .plusminus {
-  top: 0.9em;
-  left: 0.4em;
+  padding-top: 0.4em;
 }
 .plusminus span {
   cursor: pointer;
   border-radius: 999px;
-  height: 0.2em;
+  height: 0.3em;
   width: 1.5em;
   display: block;
   content: '';
@@ -482,7 +480,7 @@ input[type=radio]:checked + .switch {
 .plusminus span:after {
   cursor: pointer;
   border-radius: 999px;
-  height: 0.2em;
+  height: 0.3em;
   width: 1.5em;
   display: block;
   content: '';
