@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bootstrap Ornaments by osahan</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/osahan/BootstrapOrnaments/master/dist/css/bootstrapOrnaments.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/BootstrapExtn-Pages.min.css">
+  </head>
+  <body class="bsextn"  onload="prettyPrint()">
+
+<header class="navbar navbar-static-top bsextn-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+
+      <div data-toggle="icon" class="navbar-toggle collapsed visible-xs-inline-block">
+        <a href="#" class="brgr brgr-default brgr-left-hinge" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span></span>
+        </a>
+      </div>
+
+      <a href="http://osahan.github.io/BootstrapOrnaments/" class="navbar-brand">Bootstrap Ornaments</a>
+    </div>
+
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+      
+    <ul class="nav navbar-nav">
+      <li><a href="/osahan/BootstrapOrnaments/archive/master.zip" data-toggle="dropdown">Download</a></li>
+      <li class="dropdown"><a href="#" data-toggle="dropdown">Examples <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/switches.html">Switches</a></li>
+          <li><a href="/animated-icons.html">Animated Icons</a></li>
+          <!-- <li><a href="/ios-buttons.html">iOS Swatch Colors</a></li> -->
+        </ul>
+      </li>
+      <li><a href="https://github.com/osahan/BootstrapOrnaments/issues">Bug reports</a></li>
+    </ul>
+
+
+    </nav>
+  </div>
+</header>
+
+<a href="https://github.com/osahan/BootstrapOrnaments" class="hidden-xs hidden-sm"><img style="position: absolute; top: 0; right: 0; border: 0;z-index: 1000;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+<div class="bsextn-header">
+      <div class="container">
+        <h1>Bootstrap Ornaments</h1>
+        <p class="lead">Collection of CSS only switches for checkboxes and radios and other fun components</p>
+
+        <p class="view"><a href="https://github.com/osahan/BootstrapOrnaments">View the Project on GitHub <small>osahan/BootstrapOrnaments</small></a></p>
+
+
+<div class="visible-xs-block">
+  <a href="https://github.com/osahan/BootstrapOrnaments/zipball/master" class="btn btn-default btn-block" >Download <strong>ZIP File</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments/tarball/master" class="btn btn-default btn-block">Download <strong>TAR Ball</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments" class="btn btn-default btn-block">View On <strong>GitHub</strong></a>
+</div>
+
+<div class="btn-group hidden-xs" role="group">
+  <a href="https://github.com/osahan/BootstrapOrnaments/zipball/master" class="btn btn-default" >Download <strong>ZIP File</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments/tarball/master" class="btn btn-default">Download <strong>TAR Ball</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments" class="btn btn-default">View On <strong>GitHub</strong></a>
+</div>
+
+      </div>
+</div>
+
+
+
+
+
+<div class="container">
+
+  <h2>Checkboxes & Radio Buttons</h2>
+  <p class="lead">Toggleable CSS only switches, simply add classes and data attributes.</p>
+  <h3>Example</h3>
+  <p>Default Style: Use the <code>.switch</code> class on <code>&lt;label></code> element assigned to Checkbox.</p>
+  <p>
+    Use any of the available switch classes to quickly create a styled switch. <br />
+    Primary <code>.switch-primary</code>, Success <code>.switch-success</code>, Info <code>.switch-info</code>, Warning <code>.switch-warning</code>, Danger <code>.switch-danger</code>,   
+    </p>
+  <div class="example">
+    <div class="row">
+        <div class="col-md-12">
+            <p>To add "ON / OFF" label, add <code>data-on="ON"</code> and <code>data-off="OFF"</code> to <code>&lt;label></code> element.</p>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox" class="a11y">
+                <label for="chkbox" class="switch" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox1" class="a11y" checked />
+                <label for="chkbox1" class="switch switch-primary" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox2" class="a11y" checked/>
+                <label for="chkbox2" class="switch switch-success" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox3" class="a11y" checked/>
+                <label for="chkbox3" class="switch switch-info" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox4" class="a11y" checked/>
+                <label for="chkbox4" class="switch switch-warning" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox5" class="a11y" checked/>
+                <label for="chkbox5" class="switch switch-danger" data-on="ON" data-off="OFF"></label>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+<pre class="prettyprint">
+&lt;div>
+  &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
+  &lt;label for="chkbox" class="switch switch-primary" data-on="ON" data-off="OFF"></label>
+&lt;/div>
+</pre>
+
+  </div>
+
+
+
+  <p>Rounded Corners: Use the <code>.switch .switch-round</code> class on <code>&lt;label></code> element assigned to Checkbox</p>
+  <div class="example">
+    <div class="row">
+        <div class="col-md-12">
+            <p>To add "ON / OFF" label, add <code>data-on="ON"</code> and <code>data-off="OFF"</code> to <code>&lt;label></code> element. </p>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox-round" class="a11y">
+                <label for="chkbox-round" class="switch switch-round" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox1-round" class="a11y" checked />
+                <label for="chkbox1-round" class="switch switch-round switch-primary" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox2-round" class="a11y" />
+                <label for="chkbox2-round" class="switch switch-round switch-success" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox3-round" class="a11y" />
+                <label for="chkbox3-round" class="switch switch-round switch-info" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox4-round" class="a11y" />
+                <label for="chkbox4-round" class="switch switch-round switch-warning" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox5-round" class="a11y" />
+                <label for="chkbox5-round" class="switch switch-round switch-danger" data-on="ON" data-off="OFF"></label>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+<pre class="prettyprint">
+&lt;div>
+  &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
+  &lt;label for="chkbox" class="switch  switch-round switch-primary" data-on="ON" data-off="OFF"></label>
+&lt;/div>
+</pre>
+
+  </div>
+
+
+
+  <p>Switch with no label: Remove <code>data-on="ON"</code> and <code>data-off="OFF"</code> from <code>&lt;label></code> element</p>
+  <div class="example">
+    <div class="row">
+        <div class="col-md-12">
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox-notext" class="a11y" checked>
+                <label for="chkbox-notext" class="switch switch-success"></label>
+            </div>
+            <div data-checkbox="toggle">
+                <input type="checkbox" name="test" id="chkbox1-round-notext" class="a11y" checked />
+                <label for="chkbox1-round-notext" class="switch switch-round switch-success"></label>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+<pre class="prettyprint">
+&lt;div>
+  &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
+  &lt;label for="chkbox" class="switch switch-success"></label>
+&lt;/div>
+
+&lt;div>
+  &lt;input type="checkbox" name="test" id="chkbox" class="a11y">
+  &lt;label for="chkbox" class="switch switch-round switch-success"></label>
+&lt;/div>
+</pre>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<div class="container bottom">
+<p>
+Licensed under 
+<a href="https://github.com/osahan/BootstrapOrnaments/blob/master/LICENSE" target="_blank">The MIT License (MIT)</a>
+· This project is maintained by <a href="https://github.com/osahan" target="_blank">Osahan</a>
+· Hosted on GitHub Pages
+</p>
+</div>
+
+    <script src="js/prettify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        
+        $("[data-toggle=icon]").on("click", function(event){
+          // event.preventDefault();
+          $(this).toggleClass('active');
+        });
+
+    </script>
+  </body>
+</html>
