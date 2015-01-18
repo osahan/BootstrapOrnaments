@@ -1,0 +1,521 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bootstrap Ornaments by osahan</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/osahan/BootstrapOrnaments/master/dist/css/bootstrapOrnaments.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/BootstrapExtn-Pages.min.css">
+  </head>
+  <body class="bsextn"  onload="prettyPrint()">
+
+<header class="navbar navbar-static-top bsextn-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+
+      <div data-toggle="icon" class="navbar-toggle collapsed visible-xs-inline-block">
+        <a href="#" class="brgr brgr-default brgr-left-hinge" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span></span>
+        </a>
+      </div>
+
+      <a href="http://osahan.github.io/BootstrapOrnaments/" class="navbar-brand">Bootstrap Ornaments</a>
+    </div>
+
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+      
+    <ul class="nav navbar-nav">
+      <li><a href="/osahan/BootstrapOrnaments/archive/master.zip" data-toggle="dropdown">Download</a></li>
+      <li class="dropdown"><a href="#" data-toggle="dropdown">Examples <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/switches.html">Switches</a></li>
+          <li><a href="/animated-icons.html">Animated Icons</a></li>
+          <!-- <li><a href="/ios-buttons.html">iOS Swatch Colors</a></li> -->
+        </ul>
+      </li>
+      <li><a href="https://github.com/osahan/BootstrapOrnaments/issues">Bug reports</a></li>
+    </ul>
+
+
+    </nav>
+  </div>
+</header>
+
+<a href="https://github.com/osahan/BootstrapOrnaments" class="hidden-xs hidden-sm"><img style="position: absolute; top: 0; right: 0; border: 0;z-index: 1000;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+<div class="bsextn-header">
+      <div class="container">
+        <h1>Bootstrap Ornaments</h1>
+        <p class="lead">Collection of CSS only switches for checkboxes and radios and other fun components</p>
+
+        <p class="view"><a href="https://github.com/osahan/BootstrapOrnaments">View the Project on GitHub <small>osahan/BootstrapOrnaments</small></a></p>
+
+
+<div class="visible-xs-block">
+  <a href="https://github.com/osahan/BootstrapOrnaments/zipball/master" class="btn btn-default btn-block" >Download <strong>ZIP File</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments/tarball/master" class="btn btn-default btn-block">Download <strong>TAR Ball</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments" class="btn btn-default btn-block">View On <strong>GitHub</strong></a>
+</div>
+
+<div class="btn-group hidden-xs" role="group">
+  <a href="https://github.com/osahan/BootstrapOrnaments/zipball/master" class="btn btn-default" >Download <strong>ZIP File</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments/tarball/master" class="btn btn-default">Download <strong>TAR Ball</strong></a>
+  <a href="https://github.com/osahan/BootstrapOrnaments" class="btn btn-default">View On <strong>GitHub</strong></a>
+</div>
+
+      </div>
+</div>
+
+
+
+
+
+<div class="container">
+
+  <h2>Animated Icons</h2>
+  <p class="lead">Toggleable animated icons.</p>
+
+  <div class="highlight">
+Just add class toggler.
+<pre class="prettyprint">
+$("[data-toggle=icon]").on("click", function(){
+  $(this).toggleClass('active');
+});
+</pre>
+
+  </div>
+
+  <h3>Hamburger</h3>
+  <p>Default Style: Use the <code>.brgr .brgr-default</code>.</p>
+  <p>
+    Use any of the available switch classes to quickly create a styled switch. <br />
+    Default <code>.brgr-deafult</code>, Primary <code>.brgr-primary</code>, Success <code>.brgr-success</code>, Info <code>.brgr-info</code>, Warning <code>.brgr-warning</code>, Danger <code>.brgr-danger</code>,   
+    </p>
+  <div class="example">
+
+  <p>Left Hinged: Use the <code>.brgr-left-hinge</code>.</p>
+
+    <div class="row">
+        <div class="col-md-12">
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-default brgr-left-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-primary brgr-left-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-success brgr-left-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-info brgr-left-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-warning brgr-left-hinge">
+                  <span></span>
+              </a>
+          </div>
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-danger brgr-left-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+<pre class="prettyprint">
+&lt;div data-toggle="icon">
+    &lt;a href="javascript:void(0)" class="brgr brgr-default brgr-left-hinge">
+        &lt;span>&lt;/span>
+    &lt;/a>
+&lt;/div>
+
+</pre>
+
+  </div>
+
+  <div class="example">
+
+  <p>Right Hinged: Use the <code>.brgr-right-hinge</code>.</p>
+
+    <div class="row">
+        <div class="col-md-12">
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-default brgr-right-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-primary brgr-right-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-success brgr-right-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-info brgr-right-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-warning brgr-right-hinge">
+                  <span></span>
+              </a>
+          </div>
+          <div data-toggle="icon">
+              <a href="javascript:void(0)" class="brgr brgr-danger brgr-right-hinge">
+                  <span></span>
+              </a>
+          </div>
+
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+<pre class="prettyprint">
+&lt;div data-toggle="icon">
+    &lt;a href="javascript:void(0)" class="brgr brgr-default brgr-right-hinge">
+        &lt;span>&lt;/span>
+    &lt;/a>
+&lt;/div>
+
+</pre>
+
+  </div> <!-- // Burger End-->
+
+
+<h3>Chevron</h3>
+  <p>Default Style: Use the <code>.chevron .chevron-default</code>.</p>
+  <p>
+    Use any of the available switch classes to quickly create a styled switch. <br />
+    Default <code>.chevron-deafult</code>, Primary <code>.chevron-primary</code>, Success <code>.chevron-success</code>, Info <code>.chevron-info</code>, Warning <code>.chevron-warning</code>, Danger <code>.chevron-danger</code>,   
+    </p>
+
+  <div class="example">
+
+    <div class="row">
+        <div class="col-md-12">
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-default">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-primary">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-success">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-info">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-warning">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-danger">
+                  <span></span>
+              </a>
+          </div>
+
+
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+<pre class="prettyprint">
+&lt;div data-toggle="icon">
+    &lt;a href="javascript:void(0)" class="chevron chevron-default">
+        &lt;span>&lt;/span>
+    &lt;/a>
+&lt;/div>
+
+</pre>
+
+  </div> <!-- //Chevron -->
+
+
+
+<h3>Line to Chevron</h3>
+  <p>Default Style: Use the <code>.chevron .chevron-line .chevron-default</code>.</p>
+  <p>
+    Use any of the available switch classes to quickly create a styled switch. <br />
+    Default <code>.chevron-deafult</code>, Primary <code>.chevron-primary</code>, Success <code>.chevron-success</code>, Info <code>.chevron-info</code>, Warning <code>.chevron-warning</code>, Danger <code>.chevron-danger</code>,   
+    </p>
+
+  <div class="example">
+
+    <div class="row">
+        <div class="col-md-12">
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-line chevron-default">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-line chevron-primary">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-line chevron-success">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-line chevron-info">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-line chevron-warning">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="chevron chevron-line chevron-danger">
+                  <span></span>
+              </a>
+          </div>
+
+
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+<pre class="prettyprint">
+&lt;div data-toggle="icon">
+    &lt;a href="javascript:void(0)" class="chevron chevron-line chevron-default">
+        &lt;span>&lt;/span>
+    &lt;/a>
+&lt;/div>
+
+</pre>
+
+  </div> <!-- // Line to Chevron -->
+
+
+
+
+<h3>Plus to Cross</h3>
+  <p>Default Style: Use the <code>.cross .cross-default</code>.</p>
+  <p>
+    Use any of the available switch classes to quickly create a styled switch. <br />
+    Default <code>.cross-deafult</code>, Primary <code>.cross-primary</code>, Success <code>.cross-success</code>, Info <code>.cross-info</code>, Warning <code>.cross-warning</code>, Danger <code>.cross-danger</code>,   
+    </p>
+
+  <div class="example">
+
+    <div class="row">
+        <div class="col-md-12">
+
+          <div data-toggle="icon">
+              <a href="#" class="cross cross-default">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="cross cross-primary">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="cross cross-success">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="cross cross-info">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="cross cross-warning">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="cross cross-danger">
+                  <span></span>
+              </a>
+          </div>
+
+
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+<pre class="prettyprint">
+&lt;div data-toggle="icon">
+    &lt;a href="javascript:void(0)" class="cross cross-default">
+        &lt;span>&lt;/span>
+    &lt;/a>
+&lt;/div>
+
+</pre>
+
+  </div> <!-- // Cross -->
+
+
+
+
+
+<h3>Plus to Minus</h3>
+  <p>Default Style: Use the <code>.plusminus .plusminus-default</code>.</p>
+  <p>
+    Use any of the available switch classes to quickly create a styled switch. <br />
+    Default <code>.plusminus-deafult</code>, Primary <code>.plusminus-primary</code>, Success <code>.plusminus-success</code>, Info <code>.plusminus-info</code>, Warning <code>.plusminus-warning</code>, Danger <code>.plusminus-danger</code>,   
+    </p>
+
+  <div class="example">
+
+    <div class="row">
+        <div class="col-md-12">
+
+          <div data-toggle="icon">
+              <a href="#" class="plusminus plusminus-default">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="plusminus plusminus-primary">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="plusminus plusminus-success">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="plusminus plusminus-info">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="plusminus plusminus-warning">
+                  <span></span>
+              </a>
+          </div>
+
+          <div data-toggle="icon">
+              <a href="#" class="plusminus plusminus-danger">
+                  <span></span>
+              </a>
+          </div>
+
+
+        </div>
+    </div>
+
+  </div>
+  <div class="highlight">
+
+<pre class="prettyprint">
+&lt;div data-toggle="icon">
+    &lt;a href="javascript:void(0)" class="plusminus plusminus-default">
+        &lt;span>&lt;/span>
+    &lt;/a>
+&lt;/div>
+
+</pre>
+
+  </div> <!-- // Cross -->
+
+
+
+
+</div>
+
+
+
+
+<div class="container bottom">
+<p>
+Licensed under 
+<a href="https://github.com/osahan/BootstrapOrnaments/blob/master/LICENSE" target="_blank">The MIT License (MIT)</a>
+· This project is maintained by <a href="https://github.com/osahan" target="_blank">Osahan</a>
+· Hosted on GitHub Pages
+</p>
+</div>
+
+    <script src="js/prettify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        
+        $("[data-toggle=icon]").on("click", function(event){
+          event.preventDefault();
+          $(this).toggleClass('active');
+        });
+
+    </script>
+  </body>
+</html>
