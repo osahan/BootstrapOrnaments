@@ -165,4 +165,10 @@ li.L9 {
   letter-spacing: 2px;
   font-weight: 200;
 }
+.navbar-toggle .icon-bar {
+  background: #777777;
+}
+[data-toggle="icon"] {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=BootstrapExtn-Pages.css.map */
