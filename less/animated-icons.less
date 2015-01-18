@@ -1,0 +1,385 @@
+.icon-base-setting(@height, @width, @animation-duration){
+    cursor: pointer;
+    border-radius: 999px;
+    height: @height;
+    width: @width;
+    display: block;
+    content: '';
+    .transition-duration(@animation-duration);
+    .transition-property(all);
+    position: absolute;
+}
+
+[data-toggle=icon]{
+    cursor: pointer;
+    height: 30px;
+    width: 35px;
+    position: relative;
+    display: inline-block;
+    padding-left: 0.2em;
+}
+
+.brgr,
+.chevron,
+.cross,
+.plusminus{
+    position: absolute;
+    top: 1em;
+}
+
+// Burder Color Variants
+.brgr-default{
+    span{
+        .burger-variant(@burger-default-bg);
+    }
+}
+
+.brgr-primary{
+    span{
+        .burger-variant(@burger-primary-bg);
+    }
+}
+
+.brgr-success{
+    span{
+        .burger-variant(@burger-success-bg);
+    }
+}
+
+.brgr-info{
+    span{
+        .burger-variant(@burger-info-bg);
+    }
+}
+
+.brgr-warning{
+    span{
+        .burger-variant(@burger-warning-bg);
+    }
+}
+
+.brgr-danger{
+    span{
+        .burger-variant(@burger-danger-bg);
+    }
+}
+
+.brgr{
+
+    span{
+
+        .icon-base-setting( 0.3em, 2em, @animation-duration );
+
+        &:after{
+
+            .icon-base-setting( 0.3em, 2em, @animation-duration );
+            bottom: -10px;
+
+        }
+
+        &:before{
+
+           .icon-base-setting( 0.3em, 2em, @animation-duration );
+            top: -10px;
+
+        }
+    }
+
+
+}
+
+
+
+/*
+* Chevron
+*/
+
+.chevron{
+
+    margin-left: -0.25em;
+
+    span{
+       
+        .icon-base-setting(0.3em, 1.5em, @animation-duration);
+        .rotate(-35deg);
+
+        &:after{
+            .icon-base-setting(0.3em, 1.5em, @animation-duration);
+            .rotate(70deg);
+            right: -0.9em;
+            top: 0.65em;
+        }
+
+    }
+
+
+}
+
+.chevron-line{
+
+    span{
+
+        .rotate(0deg);
+
+        &:after{
+
+            top: 0;
+            .rotate(0deg);
+
+        }
+    }
+
+}
+
+
+// Chevron Color Variants
+.chevron-default{
+    span{
+        .chevron-variant(@burger-default-bg);
+    }
+}
+
+.chevron-primary{
+    span{
+        .chevron-variant(@burger-primary-bg);
+    }
+}
+
+.chevron-success{
+    span{
+        .chevron-variant(@burger-success-bg);
+    }
+}
+
+.chevron-info{
+    span{
+        .chevron-variant(@burger-info-bg);
+    }
+}
+
+.chevron-warning{
+    span{
+        .chevron-variant(@burger-warning-bg);
+    }
+}
+
+.chevron-danger{
+    span{
+        .chevron-variant(@burger-danger-bg);
+    }
+}
+
+
+
+/*
+* Cross
+*/
+
+.cross{
+
+    top: 0.9em;
+    left: 0.4em;
+    span{
+        .icon-base-setting(0.2em, 1.5em, @animation-duration);
+
+        &:after{
+            .icon-base-setting(0.2em, 1.5em, @animation-duration);
+            .rotate(90deg);
+        }
+
+    }
+
+}
+
+// Cross Color Variants
+.cross-default{
+    span{
+        .cross-variant(@cross-default-bg);
+    }
+}
+
+.cross-primary{
+    span{
+        .cross-variant(@cross-primary-bg);
+    }
+}
+
+.cross-success{
+    span{
+        .cross-variant(@cross-success-bg);
+    }
+}
+
+.cross-info{
+    span{
+        .cross-variant(@cross-info-bg);
+    }
+}
+
+.cross-warning{
+    span{
+        .cross-variant(@cross-warning-bg);
+    }
+}
+
+.cross-danger{
+    span{
+        .cross-variant(@cross-danger-bg);
+    }
+}
+
+
+/*
+* Plusminus
+*/
+
+.plusminus{
+
+    top: 0.9em;
+    left: 0.4em;
+    span{
+        .icon-base-setting(0.2em, 1.5em, @animation-duration);
+
+        &:after{
+            .icon-base-setting(0.2em, 1.5em, @animation-duration);
+            .rotate(90deg);
+        }
+
+    }
+
+}
+
+// Plusminus Color Variants
+.plusminus-default{
+    span{
+        .plusminus-variant(@plusminus-default-bg);
+    }
+}
+
+.plusminus-primary{
+    span{
+        .plusminus-variant(@plusminus-primary-bg);
+    }
+}
+
+.plusminus-success{
+    span{
+        .plusminus-variant(@plusminus-success-bg);
+    }
+}
+
+.plusminus-info{
+    span{
+        .plusminus-variant(@plusminus-info-bg);
+    }
+}
+
+.plusminus-warning{
+    span{
+        .plusminus-variant(@plusminus-warning-bg);
+    }
+}
+
+.plusminus-danger{
+    span{
+        .plusminus-variant(@plusminus-danger-bg);
+    }
+}
+
+
+
+
+//Active States
+
+.active{
+
+
+    /*
+        ACTIVE BURGER STATES 
+    */
+    .brgr{
+        span{
+            background-color: transparent; 
+        }
+    }
+
+    /* Left hinged buger */
+    .brgr-left-hinge{
+
+        span{
+
+            &:before,
+            &:after{
+                margin-left: 0.5em;
+                .transform-origin(left);
+            }
+
+            &:before{
+                .rotate(45deg);
+            }
+
+            &:after{
+                .rotate(-45deg);
+            }
+
+        }
+
+    }
+
+    /* Right hinged buger */
+    .brgr-right-hinge{
+
+        span{
+
+            &:before,
+            &:after{
+                margin-left: -0.5em;
+                .transform-origin(right);
+            }
+
+            &:before{
+                .rotate(-45deg);
+            }
+
+            &:after{
+                .rotate(45deg);
+            }
+
+        }
+
+    }
+
+
+    .chevron{
+
+        span{
+
+            .rotate(35deg);
+
+            &:after{
+                top: -0.65em;
+                .rotate(-70deg);
+            }
+        }
+
+    }
+
+    .cross{
+
+        span{
+            .rotate(45deg);
+        }
+
+    }
+
+    .plusminus{
+
+        span{
+            .rotate(90deg);
+            background: transparent;
+        }
+
+    }
+
+}
+
