@@ -204,6 +204,27 @@ input[type=radio]:checked + .switch {
 .brgr-danger span:after {
   background-color: #d9534f;
 }
+.brgr-black span {
+  background-color: #000000;
+}
+.brgr-black span:before,
+.brgr-black span:after {
+  background-color: #000000;
+}
+.brgr-dark-gray span {
+  background-color: #555555;
+}
+.brgr-dark-gray span:before,
+.brgr-dark-gray span:after {
+  background-color: #555555;
+}
+.brgr-gray span {
+  background-color: #777777;
+}
+.brgr-gray span:before,
+.brgr-gray span:after {
+  background-color: #777777;
+}
 .brgr span {
   top: 1.1em;
   left: 0.2em;
@@ -469,6 +490,24 @@ input[type=radio]:checked + .switch {
 .chevron-danger span:after {
   background-color: #d9534f;
 }
+.chevron-black span {
+  background-color: #000000;
+}
+.chevron-black span:after {
+  background-color: #000000;
+}
+.chevron-dark-gray span {
+  background-color: #555555;
+}
+.chevron-dark-gray span:after {
+  background-color: #555555;
+}
+.chevron-gray span {
+  background-color: #777777;
+}
+.chevron-gray span:after {
+  background-color: #777777;
+}
 /*
 * Cross
 */
@@ -596,6 +635,24 @@ input[type=radio]:checked + .switch {
 .cross-danger span:after {
   background-color: #d9534f;
 }
+.cross-black span {
+  background-color: #000000;
+}
+.cross-black span:after {
+  background-color: #000000;
+}
+.cross-dark-gray span {
+  background-color: #555555;
+}
+.cross-dark-gray span:after {
+  background-color: #555555;
+}
+.cross-gray span {
+  background-color: #777777;
+}
+.cross-gray span:after {
+  background-color: #777777;
+}
 /*
 * Plusminus
 */
@@ -722,6 +779,24 @@ input[type=radio]:checked + .switch {
 }
 .plusminus-danger span:after {
   background-color: #d9534f;
+}
+.plusminus-black span {
+  background-color: #000000;
+}
+.plusminus-black span:after {
+  background-color: #000000;
+}
+.plusminus-dark-gray span {
+  background-color: #555555;
+}
+.plusminus-dark-gray span:after {
+  background-color: #555555;
+}
+.plusminus-gray span {
+  background-color: #777777;
+}
+.plusminus-gray span:after {
+  background-color: #777777;
 }
 .active {
   /*
