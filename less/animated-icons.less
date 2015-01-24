@@ -30,6 +30,7 @@
     top: 1px;
 }
 
+
 // Burder Color Variants
 .brgr-default{
     span{
@@ -71,6 +72,9 @@
 
     span{
 
+        top: 1.1em;
+        left: 0.2em;
+
         .icon-base-setting( 0.3em, 2em, @animation-duration );
 
         &:after{
@@ -91,6 +95,30 @@
 
 }
 
+.brgr-thin{
+
+    span{
+
+        top: 1.2em;
+
+        .icon-base-setting( 0.1em, 2em, @animation-duration );
+
+        &:after{
+
+            .icon-base-setting( 0.1em, 2em, @animation-duration );
+
+        }
+
+        &:before{
+
+           .icon-base-setting( 0.1em, 2em, @animation-duration );
+
+        }
+    }
+
+
+}
+
 
 
 /*
@@ -102,7 +130,9 @@
     margin-left: -0.25em;
 
     span{
-       
+
+        top: 1.1em;
+
         .icon-base-setting(0.3em, 1.5em, @animation-duration);
         .rotate(-35deg);
 
@@ -111,6 +141,21 @@
             .rotate(70deg);
             right: -0.9em;
             top: 0.65em;
+        }
+
+    }
+
+
+}
+
+.chevron-thin{
+
+    span{
+       
+        .icon-base-setting(0.1em, 1.5em, @animation-duration);
+
+        &:after{
+            .icon-base-setting(0.1em, 1.5em, @animation-duration);
         }
 
     }
@@ -181,12 +226,34 @@
 .cross{
 
     padding-top: 0.4em;
+
     span{
+
+        top: 1.1em;
+        left: 0.5em;
+
         .icon-base-setting(0.3em, 1.5em, @animation-duration);
 
         &:after{
             .icon-base-setting(0.3em, 1.5em, @animation-duration);
             .rotate(90deg);
+        }
+
+    }
+
+}
+
+.cross-thin{
+
+    span{
+
+        top: 1.2em;
+        left: 0.5em;
+
+        .icon-base-setting(0.1em, 1.5em, @animation-duration);
+
+        &:after{
+            .icon-base-setting(0.1em, 1.5em, @animation-duration);
         }
 
     }
@@ -238,12 +305,34 @@
 .plusminus{
 
     padding-top: 0.4em;
+
     span{
+
+        top: 1.1em;
+        left: 0.5em;
+
         .icon-base-setting(0.3em, 1.5em, @animation-duration);
 
         &:after{
             .icon-base-setting(0.3em, 1.5em, @animation-duration);
             .rotate(90deg);
+        }
+
+    }
+
+}
+
+.plusminus-thin{
+
+    span{
+
+        top: 1.2em;
+        left: 0.5em;
+
+        .icon-base-setting(0.1em, 1.5em, @animation-duration);
+
+        &:after{
+            .icon-base-setting(0.1em, 1.5em, @animation-duration);
         }
 
     }
