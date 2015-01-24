@@ -230,7 +230,7 @@ input[type=radio]:checked + .switch {
   left: 0.2em;
   cursor: pointer;
   border-radius: 999px;
-  height: 0.3em;
+  height: 0.2em;
   width: 2em;
   display: block;
   content: '';
@@ -249,7 +249,7 @@ input[type=radio]:checked + .switch {
 .brgr span:after {
   cursor: pointer;
   border-radius: 999px;
-  height: 0.3em;
+  height: 0.2em;
   width: 2em;
   display: block;
   content: '';
@@ -269,7 +269,7 @@ input[type=radio]:checked + .switch {
 .brgr span:before {
   cursor: pointer;
   border-radius: 999px;
-  height: 0.3em;
+  height: 0.2em;
   width: 2em;
   display: block;
   content: '';
@@ -344,6 +344,64 @@ input[type=radio]:checked + .switch {
   transition-property: all;
   position: absolute;
 }
+.brgr-thick span {
+  top: 1.2em;
+  cursor: pointer;
+  border-radius: 999px;
+  height: 0.3em;
+  width: 2em;
+  display: block;
+  content: '';
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  position: absolute;
+}
+.brgr-thick span:after {
+  cursor: pointer;
+  border-radius: 999px;
+  height: 0.3em;
+  width: 2em;
+  display: block;
+  content: '';
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  position: absolute;
+}
+.brgr-thick span:before {
+  cursor: pointer;
+  border-radius: 999px;
+  height: 0.3em;
+  width: 2em;
+  display: block;
+  content: '';
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  position: absolute;
+}
 /*
 * Chevron
 */
@@ -354,7 +412,7 @@ input[type=radio]:checked + .switch {
   top: 1.1em;
   cursor: pointer;
   border-radius: 999px;
-  height: 0.3em;
+  height: 0.2em;
   width: 1.5em;
   display: block;
   content: '';
@@ -378,7 +436,7 @@ input[type=radio]:checked + .switch {
 .chevron span:after {
   cursor: pointer;
   border-radius: 999px;
-  height: 0.3em;
+  height: 0.2em;
   width: 1.5em;
   display: block;
   content: '';
@@ -424,6 +482,44 @@ input[type=radio]:checked + .switch {
   cursor: pointer;
   border-radius: 999px;
   height: 0.1em;
+  width: 1.5em;
+  display: block;
+  content: '';
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  position: absolute;
+}
+.chevron-thick span {
+  cursor: pointer;
+  border-radius: 999px;
+  height: 0.3em;
+  width: 1.5em;
+  display: block;
+  content: '';
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  position: absolute;
+}
+.chevron-thick span:after {
+  cursor: pointer;
+  border-radius: 999px;
+  height: 0.3em;
   width: 1.5em;
   display: block;
   content: '';
@@ -519,7 +615,7 @@ input[type=radio]:checked + .switch {
   left: 0.5em;
   cursor: pointer;
   border-radius: 999px;
-  height: 0.3em;
+  height: 0.2em;
   width: 1.5em;
   display: block;
   content: '';
@@ -538,7 +634,7 @@ input[type=radio]:checked + .switch {
 .cross span:after {
   cursor: pointer;
   border-radius: 999px;
-  height: 0.3em;
+  height: 0.2em;
   width: 1.5em;
   display: block;
   content: '';
@@ -584,6 +680,46 @@ input[type=radio]:checked + .switch {
   cursor: pointer;
   border-radius: 999px;
   height: 0.1em;
+  width: 1.5em;
+  display: block;
+  content: '';
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  position: absolute;
+}
+.cross-thick span {
+  top: 1.2em;
+  left: 0.5em;
+  cursor: pointer;
+  border-radius: 999px;
+  height: 0.3em;
+  width: 1.5em;
+  display: block;
+  content: '';
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  position: absolute;
+}
+.cross-thick span:after {
+  cursor: pointer;
+  border-radius: 999px;
+  height: 0.3em;
   width: 1.5em;
   display: block;
   content: '';
@@ -664,7 +800,7 @@ input[type=radio]:checked + .switch {
   left: 0.5em;
   cursor: pointer;
   border-radius: 999px;
-  height: 0.3em;
+  height: 0.2em;
   width: 1.5em;
   display: block;
   content: '';
@@ -683,7 +819,7 @@ input[type=radio]:checked + .switch {
 .plusminus span:after {
   cursor: pointer;
   border-radius: 999px;
-  height: 0.3em;
+  height: 0.2em;
   width: 1.5em;
   display: block;
   content: '';
@@ -729,6 +865,46 @@ input[type=radio]:checked + .switch {
   cursor: pointer;
   border-radius: 999px;
   height: 0.1em;
+  width: 1.5em;
+  display: block;
+  content: '';
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  position: absolute;
+}
+.plusminus-thick span {
+  top: 1.2em;
+  left: 0.5em;
+  cursor: pointer;
+  border-radius: 999px;
+  height: 0.3em;
+  width: 1.5em;
+  display: block;
+  content: '';
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  position: absolute;
+}
+.plusminus-thick span:after {
+  cursor: pointer;
+  border-radius: 999px;
+  height: 0.3em;
   width: 1.5em;
   display: block;
   content: '';
