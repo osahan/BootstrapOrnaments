@@ -1,0 +1,97 @@
+// Base Switch styles
+// --------------------------------------------------
+
+.checkBtn{
+
+    content: " ";
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border: 2px solid @checkbtn-default-bg;
+    position: relative;
+    top: 8px;
+    margin-right: 10px;
+    border-radius: 2px;
+
+}
+
+.checkBtn-visualBtn{
+
+    &::before{
+        content: " ";
+        position: absolute;
+        top: 7px;
+        left: 3px;
+        display: inline-block;
+        border-color: transparent;
+        border-style: solid;
+        border-right: 1px;
+        border-top: 1px;
+        width: 15px;
+        height: 6px;
+        transform: rotate(-45deg);
+    }
+
+}
+
+.checkBtn-round{
+
+    border-radius: 99999px;
+   
+}
+
+
+// Alternate Switches
+// --------------------------------------------------
+
+
+
+input[type=checkbox]:checked + .checkBtn, 
+input[type=radio]:checked + .checkBtn {
+
+    .checkBtn-visualBtn{
+        
+        &::before{
+           border-color: @checkbtn-white;
+        }
+    
+    }
+
+    &.checkBtn-default {
+      .checkBtn-variant(@gray-darker; @checkbtn-default-bg);
+
+        .checkBtn-visualBtn{
+            
+            &::before{
+               border-color: @gray-darker;
+            }
+        
+        }
+
+    }
+
+    &.checkBtn-primary {
+        .checkBtn-variant(@checkbtn-white; @checkbtn-primary-bg);
+    }
+
+    // Success appears as green
+    &.checkBtn-success {
+      .checkBtn-variant(@checkbtn-white; @checkbtn-success-bg);
+    }
+
+    // Info appears as blue-green
+    &.checkBtn-info {
+      .checkBtn-variant(@checkbtn-white; @checkbtn-info-bg);
+    }
+
+    // Warning appears as orange
+    &.checkBtn-warning {
+      .checkBtn-variant(@checkbtn-white; @checkbtn-warning-bg);
+    }
+
+    // Danger and error appear as red
+    &.checkBtn-danger {
+      .checkBtn-variant(@checkbtn-white; @checkbtn-danger-bg);
+    }
+
+}
